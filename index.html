@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="A JavaScript Calculator FreeCodeCamp project">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Sass, Bootstrap, FreeCodeCamp, Calculator">
+  <meta name="author" content="Nix7amcm">
+  
+  <title>JavaScript Calculator</title>
+
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="/styles/main.css" />
+
+  <script src="js/script.js" defer></script>
+
+</head>
+
+  <body class="d-flex flex-column min-vh-100">
+
+    <div class="container-fluid d-flex flex-column align-items-center my-auto">
+
+      <div
+        id="calculator"
+        class="d-flex flex-column border bg-info-subtle border-3 border-dark rounded p-3"
+      >
+
+        <div
+          id="screen"
+          class="bg-dark bg-gradient text-light border border-3 border-dark rounded p-3"
+        >
+          <div class="text-end">8008135</div>
+        </div>
+
+        <div class="container-fluid mt-3">
+
+          <div class="row">
+            <button class="col-6 btn btn-lg btn-danger fs-6">AC</button>
+            <div class="col-3 d-flex justify-content-center align-items-center"><img
+                src="assets/icons8-calculator.gif"
+                alt=""
+                class="calc-gif"
+              >
+            </div>
+            <button class="col-3 btn btn-lg btn-warning fs-6">/</button>
+          </div>
+
+          <div class="row">
+            <button class="col-3 btn btn-lg btn-light">7</button>
+            <button class="col-3 btn btn-lg btn-light">8</button>
+            <button class="col-3 btn btn-lg btn-light">9</button>
+            <button class="col-3 btn btn-lg btn-warning fs-6">x</button>
+          </div>
+
+          <div class="row">
+            <button class="col-3 btn btn-lg btn-light">4</button>
+            <button class="col-3 btn btn-lg btn-light">5</button>
+            <button class="col-3 btn btn-lg btn-light">6</button>
+            <button class="col-3 btn btn-lg btn-warning fs-6">-</button>
+          </div>
+
+          <div class="row">
+            <button class="col-3 btn btn-lg btn-light">1</button>
+            <button class="col-3 btn btn-lg btn-light">2</button>
+            <button class="col-3 btn btn-lg btn-light">3</button>
+            <button class="col-3 btn btn-lg btn-warning fs-6">+</button>
+          </div>
+
+          <div class="row">
+            <button class="col-3 btn btn-lg btn-light">0</button>
+            <button class="col-3 btn btn-lg btn-light">.</button>
+            <button class="col-6 btn btn-lg btn-success fs-6">=</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <footer class="d-flex flex-column justify-content-center align-items-center pt-5 pb-0 mb-0 text-light">
+        <p class='mb-1 ps-2'>
+          Coded by
+          <a
+            id="footer-link"
+            href="https://github.com/Nix7amcm"
+            target='_blank'
+            rel='noopener noreferrer'
+          > Nix7amcm⚡</a>
+        </p>
+        <p class='credit mb-0 pb-0'>
+          <a target="_blank" href="https://icons8.com/icon/HE27AKbr2E0d/calculator">Calculator</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+      </footer>
+
+
+
+    </div>
+
+
+
+    <!-- col-6	col-sm-6 col-md-5	col-lg-4 col-xl-3	col-xxl-2 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

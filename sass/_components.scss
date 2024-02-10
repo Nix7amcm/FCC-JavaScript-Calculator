@@ -1,0 +1,53 @@
+// Path: sass/_components.scss
+/* Contains reusable components- buttons, navbars, cards etc */
+
+body {
+  font-family: $body-font;
+  background-color: $body-bg;
+}
+
+#calculator {
+  font-family: $keys-font;
+  width: $calc-width;
+  box-shadow: $calc-box-shadow;
+
+  #screen {
+    font-family: $screen-font;
+    font-size: $keys-fs;
+  }
+
+  // .calc-gif {
+  //   // width: $calc-gif-width;
+  // }
+
+  button {
+    border: $keys-border;
+    // height: $keys-height;
+  }
+}
+
+footer {
+  font-size: $footer-fs;
+
+  .credit {
+    font-size: $footer-credit-fs;
+  }
+
+  a {
+    color: $footer-a-color;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover,
+    &:focus-visible {
+      color: $footer-a-hover-color;
+      text-decoration: $footer-a-u-color underline;
+      text-decoration-thickness: $footer-a-u-thickness;
+      text-underline-offset: $footer-a-u-offset;
+    }
+
+    &:active {
+      color: $footer-a-active-color;
+    }
+  }
+}

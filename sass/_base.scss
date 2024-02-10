@@ -1,0 +1,28 @@
+/* Contains all the resets, variables, mixins & utility classes */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/6281994cf2630f51e9e271cb5f0c66a9?family=DigitsDB+Normal');
+@import url('https://db.onlinewebfonts.com/c/ba883c280c4055f0ae9280fa9f380fbc?family=Digitalix');
+
+//>>> Body:
+$body-bg: #2c2c54;
+$body-font: "Chakra Petch", sans-serif;
+
+//>>> Calculator:
+$calc-width: 20rem;
+$calc-box-shadow: 3px 3px 10px #222;
+$screen-font: "DigitsDB Normal", monospace;
+$keys-font: "Digitalix", monospace;
+$keys-fs: 1.875rem;
+$keys-height: 1.875rem !important;
+$keys-border: solid 1px #222 !important;
+$calc-gif-width: 2.5rem;
+
+//>>> Footer:
+$footer-fs: .75rem;
+$footer-credit-fs: .625rem;
+$footer-a-color: #14ff99;
+$footer-a-hover-color: darken(#3CD5F3, 10%);
+$footer-a-active-color: lighten(#14ff99, 10%);
+$footer-a-u-color: #14ff99;
+$footer-a-u-thickness: 0.11rem;
+$footer-a-u-offset: 0.1rem;
