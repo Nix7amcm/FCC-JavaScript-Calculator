@@ -1,30 +1,56 @@
-// Path: sass/_components.scss
-/* Contains reusable components- buttons, navbars, cards etc */
+//**** Path: sass/_components.scss
+//::::: Element & components specific & reusable styles
 
 body {
   font-family: $body-font;
   background-color: $body-bg;
 }
 
+
 #calculator {
-  font-family: $keys-font;
   width: $calc-width;
   box-shadow: $calc-box-shadow;
 
-  #screen {
-    font-family: $screen-font;
-    font-size: $keys-fs;
+  #display {
+    font-family: $display-font;
+    font-size: $display-fs;
   }
-
-  // .calc-gif {
-  //   // width: $calc-gif-width;
-  // }
 
   button {
-    border: $keys-border;
-    // height: $keys-height;
+    font-family: $btn-font;
+    font-size: $btn-fs;
+    height: $btn-height;
+    border: $btn-border;
+  }
+
+  .calc-gif {
+    height: $calc-gif-height;
+  }
+
+  //>>> Iterate over all button IDs
+  @each $id in $all-btn-ids {
+
+    //--- Check if the current ID is not in the list of IDs to exclude
+    @if not index($exclude-btn-ids, $id) {
+
+      //--- Apply the following styles to non-excluded buttons
+      ##{$id} {
+        color: #333;
+      }
+    }
+
+    //--- If the current ID is in the list of IDs to exclude
+    @if index($exclude-btn-ids, $id) {
+
+      //--- Apply the following styles to excluded buttons
+      ##{$id} {
+        font-size: $exclude-btn-fs;
+        padding-top: .625rem !important;
+      }
+    }
   }
 }
+
 
 footer {
   font-size: $footer-fs;

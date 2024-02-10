@@ -1,24 +1,80 @@
-/* Contains all the resets, variables, mixins & utility classes */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap");
 @import url("https://db.onlinewebfonts.com/c/6281994cf2630f51e9e271cb5f0c66a9?family=DigitsDB+Normal");
 @import url("https://db.onlinewebfonts.com/c/ba883c280c4055f0ae9280fa9f380fbc?family=Digitalix");
-/* Contains reusable components- buttons, navbars, cards etc */
 body {
   font-family: "Chakra Petch", sans-serif;
   background-color: #2c2c54;
 }
 
 #calculator {
-  font-family: "Digitalix", monospace;
-  width: 20rem;
+  width: 300px;
   box-shadow: 3px 3px 10px #222;
 }
-#calculator #screen {
+#calculator #display {
   font-family: "DigitsDB Normal", monospace;
   font-size: 1.875rem;
 }
 #calculator button {
-  border: solid 1px #222 !important;
+  font-family: "Digitalix", monospace;
+  font-size: 1rem;
+  height: 2.5rem;
+  border: solid 1px #222;
+}
+#calculator .calc-gif {
+  height: 2.5rem;
+}
+#calculator #one {
+  color: #333;
+}
+#calculator #two {
+  color: #333;
+}
+#calculator #three {
+  color: #333;
+}
+#calculator #four {
+  color: #333;
+}
+#calculator #five {
+  color: #333;
+}
+#calculator #six {
+  color: #333;
+}
+#calculator #seven {
+  color: #333;
+}
+#calculator #eight {
+  color: #333;
+}
+#calculator #nine {
+  color: #333;
+}
+#calculator #zero {
+  color: #333;
+}
+#calculator #decimal {
+  color: #333;
+}
+#calculator #add {
+  color: #333;
+}
+#calculator #subtract {
+  color: #333;
+}
+#calculator #multiply {
+  color: #333;
+}
+#calculator #divide {
+  color: #333;
+}
+#calculator #clear {
+  font-size: 0.8rem !important;
+  padding-top: 0.625rem !important;
+}
+#calculator #equals {
+  font-size: 0.8rem !important;
+  padding-top: 0.625rem !important;
 }
 
 footer {
@@ -43,7 +99,6 @@ footer a:active {
   color: #47ffaf;
 }
 
-/* Contains layout- container, flex and grid-related styles */
 .row {
   margin-top: 2px !important;
 }/*# sourceMappingURL=main.css.map */

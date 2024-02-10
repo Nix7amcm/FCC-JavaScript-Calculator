@@ -1,4 +1,6 @@
-/* Contains all the resets, variables, mixins & utility classes */
+//**** Path: sass/_base.scss
+//::::: Variables
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/6281994cf2630f51e9e271cb5f0c66a9?family=DigitsDB+Normal');
 @import url('https://db.onlinewebfonts.com/c/ba883c280c4055f0ae9280fa9f380fbc?family=Digitalix');
@@ -8,14 +10,19 @@ $body-bg: #2c2c54;
 $body-font: "Chakra Petch", sans-serif;
 
 //>>> Calculator:
-$calc-width: 20rem;
+$calc-width: 300px;
 $calc-box-shadow: 3px 3px 10px #222;
-$screen-font: "DigitsDB Normal", monospace;
-$keys-font: "Digitalix", monospace;
-$keys-fs: 1.875rem;
-$keys-height: 1.875rem !important;
-$keys-border: solid 1px #222 !important;
-$calc-gif-width: 2.5rem;
+$display-font: "DigitsDB Normal", monospace;
+$display-fs: 1.875rem;
+$btn-font: "Digitalix", monospace;
+$btn-fs: 1rem;
+$exclude-btn-fs: 0.8rem !important;
+$btn-height: 2.5rem;
+$btn-border: solid 1px #222;
+$calc-gif-height: 2.5rem;
+
+$all-btn-ids: one, two, three, four, five, six, seven, eight, nine, zero, decimal, add, subtract, multiply, divide, clear, equals;
+$exclude-btn-ids: clear, equals;
 
 //>>> Footer:
 $footer-fs: .75rem;
