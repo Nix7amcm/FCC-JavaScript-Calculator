@@ -2,7 +2,7 @@
 //::::: Variables
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
-@import url('https://db.onlinewebfonts.com/c/6281994cf2630f51e9e271cb5f0c66a9?family=DigitsDB+Normal');
+@import url('https://db.onlinewebfonts.com/c/e2b9630cd56b1778e841e805b47c9347?family=Digital+V1');
 @import url('https://db.onlinewebfonts.com/c/ba883c280c4055f0ae9280fa9f380fbc?family=Digitalix');
 
 //>>> Body:
@@ -12,8 +12,14 @@ $body-font: "Chakra Petch", sans-serif;
 //>>> Calculator:
 $calc-width: 300px;
 $calc-box-shadow: 3px 3px 10px #222;
-$display-font: "DigitsDB Normal", monospace;
-$display-fs: 1.875rem;
+
+$display-wrap-height: 4.5rem;
+$display-wrap-font: "Digital V1", monospace;
+$display-wrap-line-height: normal;
+$display-wrap-letter-space: 0.1rem;
+$display-current-fs: 1.75rem;
+$display-prev-fs: 1rem;
+
 $btn-font: "Digitalix", monospace;
 $btn-fs: 1rem;
 $exclude-btn-fs: 0.8rem !important;

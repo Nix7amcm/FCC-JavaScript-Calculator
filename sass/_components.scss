@@ -11,9 +11,19 @@ body {
   width: $calc-width;
   box-shadow: $calc-box-shadow;
 
-  #display {
-    font-family: $display-font;
-    font-size: $display-fs;
+  #display-wrap {
+    height: $display-wrap-height;
+    font-family: $display-wrap-font;
+    line-height: $display-wrap-line-height;
+    letter-spacing: $display-wrap-letter-space;
+
+    .current-operand {
+      font-size: $display-current-fs;
+    }
+    
+    .previous-operand {
+      font-size: $display-prev-fs;
+    }
   }
 
   button {
@@ -50,6 +60,7 @@ body {
     }
   }
 }
+
 
 
 footer {

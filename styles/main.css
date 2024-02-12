@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap");
-@import url("https://db.onlinewebfonts.com/c/6281994cf2630f51e9e271cb5f0c66a9?family=DigitsDB+Normal");
+@import url("https://db.onlinewebfonts.com/c/e2b9630cd56b1778e841e805b47c9347?family=Digital+V1");
 @import url("https://db.onlinewebfonts.com/c/ba883c280c4055f0ae9280fa9f380fbc?family=Digitalix");
 body {
   font-family: "Chakra Petch", sans-serif;
@@ -10,9 +10,17 @@ body {
   width: 300px;
   box-shadow: 3px 3px 10px #222;
 }
-#calculator #display {
-  font-family: "DigitsDB Normal", monospace;
-  font-size: 1.875rem;
+#calculator #display-wrap {
+  height: 4.5rem;
+  font-family: "Digital V1", monospace;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+#calculator #display-wrap .current-operand {
+  font-size: 1.75rem;
+}
+#calculator #display-wrap .previous-operand {
+  font-size: 1rem;
 }
 #calculator button {
   font-family: "Digitalix", monospace;

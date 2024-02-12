@@ -23,13 +23,16 @@
   
   <link rel="stylesheet" href="/styles/main.css" />
 
-  <script src="js/script.js" defer></script>
-
 </head>
 
   <body class="d-flex flex-column min-vh-100">
 
     <div class="container-fluid d-flex flex-column align-items-center my-auto">
+
+      <header class="d-flex flex-column justify-content-center align-items-center text-light pb-5">
+        <h1 class="display-6">JavaScript Calculator</h1>
+        <p class="lead">A FreeCodeCamp project</p>
+      </header>
 
 
       <div
@@ -38,15 +41,17 @@
       >
 
         <div
-          id="display-wrapper"
-          class="bg-dark bg-gradient text-light rounded pt-3 px-3 pb-2"
+          id="display-wrap"
+          class="d-flex flex-column justify-content-center bg-dark bg-gradient text-light rounded px-3"
         >
           <div
+            id="top-display"
+            class="previous-operand text-end"
+          ></div>
+          <div
             id="display"
-            class="text-end"
-          >
-            8008135
-          </div>
+            class="current-operand text-end pt-1"
+          ></div>
         </div>
 
         <div class="container-fluid mt-3">
@@ -67,7 +72,7 @@
             </div>
             <button
               id="divide"
-              class="col-3 btn btn-lg btn-warning fs-6"
+              class="operator col-3 btn btn-lg btn-warning fs-6"
             >
               /
             </button>
@@ -76,25 +81,25 @@
           <div class="row">
             <button
               id="seven"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               7
             </button>
             <button
               id="eight"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               8
             </button>
             <button
               id="nine"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               9
             </button>
             <button
               id="multiply"
-              class="col-3 btn btn-lg btn-warning fs-6"
+              class="operator col-3 btn btn-lg btn-warning fs-6"
             >
               x
             </button>
@@ -103,25 +108,25 @@
           <div class="row">
             <button
               id="four"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               4
             </button>
             <button
               id="five"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               5
             </button>
             <button
               id="six"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               6
             </button>
             <button
               id="subtract"
-              class="col-3 btn btn-lg btn-warning fs-6"
+              class="operator col-3 btn btn-lg btn-warning fs-6"
             >
               -
             </button>
@@ -130,25 +135,25 @@
           <div class="row">
             <button
               id="one"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               1
             </button>
             <button
               id="two"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               2
             </button>
             <button
               id="three"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               3
             </button>
             <button
               id="add"
-              class="col-3 btn btn-lg btn-warning fs-6"
+              class="operator col-3 btn btn-lg btn-warning fs-6"
             >
               +
             </button>
@@ -157,7 +162,7 @@
           <div class="row">
             <button
               id="zero"
-              class="col-3 btn btn-lg btn-light"
+              class="number col-3 btn btn-lg btn-light"
             >
               0</button>
             <button
@@ -205,7 +210,7 @@
 
 
 
-    <!-- col-6	col-sm-6 col-md-5	col-lg-4 col-xl-3	col-xxl-2 -->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -216,6 +221,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
